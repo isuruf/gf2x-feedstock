@@ -24,8 +24,10 @@ source:
 
 
 build:
-  number: 0
+  number: 1
   skip: true        # [win]
+  track_features:
+    - gf2x
 
 requirements:
   build:
