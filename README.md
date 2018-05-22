@@ -17,14 +17,16 @@ irreducible/primitive trinomials.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/gf2x-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/gf2x-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/gf2x-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/gf2x-feedstock)
-Windows: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/gf2x-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/gf2x-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/gf2x-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/gf2x-feedstock)
+![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/gf2x/badges/version.svg)](https://anaconda.org/conda-forge/gf2x)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/gf2x/badges/downloads.svg)](https://anaconda.org/conda-forge/gf2x)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-gf2x-green.svg)](https://anaconda.org/conda-forge/gf2x) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/gf2x.svg)](https://anaconda.org/conda-forge/gf2x) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/gf2x.svg)](https://anaconda.org/conda-forge/gf2x) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/gf2x.svg)](https://anaconda.org/conda-forge/gf2x) |
 
 Installing gf2x
 ===============
