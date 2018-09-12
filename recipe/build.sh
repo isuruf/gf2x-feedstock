@@ -16,7 +16,7 @@ case `uname` in
         export AR=llvm-ar
         export LD=lld-link
         export CFLAGS="-MD -I$PREFIX/Library/include -O2"
-        export LDFLAGS="$LDFLAGS -L$PREFIX/Library/lib"
+        export LDFLAGS="$LDFLAGS -link -L$PREFIX/Library/lib"
         clang --version
         llvm-as --version
         llvm-ar --version
