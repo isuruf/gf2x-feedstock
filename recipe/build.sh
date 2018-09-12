@@ -20,7 +20,7 @@ case `uname` in
         clang --version
         llvm-as --version
         llvm-ar --version
-        ./configure --prefix="$PREFIX/Library" --libdir="$PREFIX/Library/lib" --disable-hardware-specific-code --disable-shared
+        ./configure --prefix="$PREFIX/Library" --libdir="$PREFIX/Library/lib" --disable-hardware-specific-code --disable-static
         ;;
 esac
 

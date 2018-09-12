@@ -11,6 +11,7 @@ source:
   patches:
     # patches from https://github.com/sagemath/sage
     - patches/0001-generic_really_is_generic.patch
+    - patches/dll.patch
 
 
 build:
