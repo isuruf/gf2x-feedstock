@@ -4,8 +4,6 @@ chmod +x configure
 
 export CFLAGS="-O2 -g $CFLAGS"
 
-#TODO: Try building dll on windows
-
 case `uname` in
     Darwin|Linux)
         ./configure --prefix="$PREFIX" --libdir="$PREFIX"/lib --disable-hardware-specific-code
@@ -16,7 +14,8 @@ case `uname` in
         export RANLIB=llvm-ranlib
         export AS=llvm-as
         export AR=llvm-ar
-        export CFLAGS="-MD -I$PREFIX/Library/include"
+        export LD=lld-link
+        export CFLAGS="-MD -I$PREFIX/Library/include -O2"
         export LDFLAGS="$LDFLAGS -L$PREFIX/Library/lib"
         clang --version
         llvm-as --version
