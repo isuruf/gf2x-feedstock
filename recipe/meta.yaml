@@ -43,7 +43,7 @@ test:
     - test -f $PREFIX/lib/lib{{ name }}.so         # [linux]
     - test -f $PREFIX/lib/lib{{ name }}.dylib      # [osx]
     # TODO: try building a dll
-    - if not exist %LIBRARY_LIB%\\libgf2x.a exit 1    # [win]
+    - if not exist %LIBRARY_LIB%\\gf2x.lib exit 1     # [win]
     - if not exist %LIBRARY_INC%\\gf2x.h exit 1       # [win]
 
 about:
