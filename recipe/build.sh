@@ -10,16 +10,10 @@ case `uname` in
         ;;
     MINGW*)
         export PATH="$PREFIX/Library/bin:$BUILD_PREFIX/Library/bin:$PATH"
-        export CC=clang-cl
-        export RANLIB=llvm-ranlib
-        export AS=llvm-as
-        export AR=llvm-ar
-        export LD=lld-link
+        export CC=cl
+        export LD=link
         export CFLAGS="-MD -I$PREFIX/Library/include -O2"
         export LDFLAGS="$LDFLAGS -link -L$PREFIX/Library/lib"
-        clang --version
-        llvm-as --version
-        llvm-ar --version
         ./configure --prefix="$PREFIX/Library" --libdir="$PREFIX/Library/lib" --disable-hardware-specific-code
         ;;
 esac
