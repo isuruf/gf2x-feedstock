@@ -4,10 +4,10 @@ chmod +x configure
 
 export CFLAGS="-O2 -g $CFLAGS"
 
+#TODO: Try building dll on windows
 
 case `uname` in
-    Darwin)
-    Linux)
+    Darwin|Linux)
         ./configure --prefix="$PREFIX" --libdir="$PREFIX"/lib --disable-hardware-specific-code
         ;;
     MINGW*)
