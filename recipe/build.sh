@@ -10,7 +10,7 @@ case `uname` in
         ;;
     MINGW*)
         export PATH="$PREFIX/Library/bin:$BUILD_PREFIX/Library/bin:$PATH"
-        export CC=clang
+        export CC=clang-cl
         export RANLIB=llvm-ranlib
         export AS=llvm-as
         export AR=llvm-ar
