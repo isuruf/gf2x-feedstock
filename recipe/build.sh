@@ -13,7 +13,7 @@ case `uname` in
         export CC=cl
         export LD=link
         export CFLAGS="-MD -I$PREFIX/Library/include -O2"
-        export LDFLAGS="$LDFLAGS -link -L$PREFIX/Library/lib"
+        export LDFLAGS="$LDFLAGS -L$PREFIX/Library/lib"
         ./configure --prefix="$PREFIX/Library" --libdir="$PREFIX/Library/lib" --disable-hardware-specific-code
         ;;
 esac
